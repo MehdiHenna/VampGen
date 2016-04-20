@@ -25,13 +25,3 @@ var browserify = ('browserify');
  		proxy:'vampgen.dev'
  	});
  });
-
- gulp.task('jsx', function(){
- 	var app = browserify({
- 		entries: ['./resources/assets/js/app.js'],
- 		outfile: ['./public/js/app.js'],
- 		transform: [reactify, babelify],
- 		debug: true,
- 		cache: {}, packageCache: {}, fullPaths: true
- 	});
- })
