@@ -1,5 +1,6 @@
 var elixir = require('laravel-elixir');
-
+var gulp = require('gulp');
+var browserify = ('browserify');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -11,6 +12,26 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
-});
+ elixir(function(mix) {
+ 	mix.sass('app.scss');
+ });
+
+ elixir(function(mix){
+ 	mix.browserify('app.js');
+ });
+
+ elixir(function(mix){
+ 	mix.browserSync({
+ 		proxy:'vampire.dev'
+ 	});
+ });
+
+ gulp.task('jsx', function(){
+ 	var app = browserify({
+ 		entries: ['./resources/assets/js/app.js'],
+ 		outfile: ['./public/js/app.js'],
+ 		transform: [reactify, babelify],
+ 		debug: true,
+ 		cache: {}, packageCache: {}, fullPaths: true
+ 	});
+ })
