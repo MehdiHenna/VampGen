@@ -14,7 +14,6 @@ class CreateUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
            $table->rememberToken();
-            
         });
     }
 
