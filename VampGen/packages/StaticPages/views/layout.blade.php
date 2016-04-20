@@ -18,6 +18,12 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
+    <nav class="menu">
+        <ul>
+            <li><a href="">Inscription</a></li>
+            <li><a href="">Connexion</a></li>
+        </ul>
+    </nav>
     <h1>JE SUIS LA !!!!!!!!!!¡¡¡¡¡¡¡¡</h1>
     @yield('content')
 
