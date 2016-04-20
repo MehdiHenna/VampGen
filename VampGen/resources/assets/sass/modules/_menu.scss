@@ -1,0 +1,37 @@
+/* Mini-reset */
+
+body {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+a {
+	text-decoration:none;
+	color:inherit;
+}
+ul li {
+	list-style-type:none;
+}
+
+/* Menu */
+
+.menu {
+
+	display:flex;
+	background-color:#d50000;
+	
+	& ul {
+    	display: flex;
+    	flex-direction: row;
+      	justify-content: flex-end;
+    	width: 100%;
+    	padding-right:30px;
+
+    	& li {
+    		flex-direction: row;
+      		justify-content: flex-end;
+      		padding:10px 0 10px 20px;
+    	}
+  	}
+
+}
