@@ -2,8 +2,28 @@
 @section('content')
 <form action="" method="post" class="vg-form">
 	<div class="vg-field">
-		<label for="nom">Nom</label>
-		<input type="text" id="nom"/>
+		<label for="nom">Physique</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
+	</div>
+	<div class="vg-field">
+		<label for="nom">Social</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
+	</div>
+		<div class="vg-field">
+		<label for="nom">Mental</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
 	</div>
 </form>
 @endsection

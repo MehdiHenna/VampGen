@@ -1,84 +1,29 @@
 @extends(config('pages.pages_template'))
 @section('content')
-<h3>Physique</h3>
 <form action="" method="post" class="vg-form">
 	<div class="vg-field">
-		<label for="nom">Force</label>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
+		<label for="nom">Talents</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
 	</div>
 	<div class="vg-field">
-		<label for="nom">Dextérité</label>
-		<input type="radio" id="dexterity"/>
-		<input type="radio" id="dexterity"/>
-		<input type="radio" id="dexterity"/>
-		<input type="radio" id="dexterity"/>
-		<input type="radio" id="dexterity"/>
+		<label for="nom">Compétences</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
 	</div>
-	<div class="vg-field">
-		<label for="nom">Vigueur</label>
-		<input type="radio" id="stamina"/>
-		<input type="radio" id="stamina"/>
-		<input type="radio" id="stamina"/>
-		<input type="radio" id="stamina"/>
-		<input type="radio" id="stamina"/>
-	</div>
-</form>
-<h3>Social</h3>
-<form action="" method="post" class="vg-form">
-	<div class="vg-field">
-		<label for="nom">Charisme</label>
-		<input type="radio" id="charisma"/>
-		<input type="radio" id="charisma"/>
-		<input type="radio" id="charisma"/>
-		<input type="radio" id="charisma"/>
-		<input type="radio" id="charisma"/>
-	</div>
-	<div class="vg-field">
-		<label for="nom">Manipulation</label>
-		<input type="radio" id="manipulation"/>
-		<input type="radio" id="manipulation"/>
-		<input type="radio" id="manipulation"/>
-		<input type="radio" id="manipulation"/>
-		<input type="radio" id="manipulation"/>
-	</div>
-	<div class="vg-field">
-		<label for="nom">Apparence</label>
-		<input type="radio" id="appearence"/>
-		<input type="radio" id="appearence"/>
-		<input type="radio" id="appearence"/>
-		<input type="radio" id="appearence"/>
-		<input type="radio" id="appearence"/>
-	</div>
-</form>
-<h3>Mental</h3>
-<form action="" method="post" class="vg-form">
-	<div class="vg-field">
-		<label for="nom">Perception</label>
-		<input type="radio" id="perception"/>
-		<input type="radio" id="perception"/>
-		<input type="radio" id="perception"/>
-		<input type="radio" id="perception"/>
-		<input type="radio" id="perception"/>
-	</div>
-	<div class="vg-field">
-		<label for="nom">Intelligence</label>
-		<input type="radio" id="intelligence"/>
-		<input type="radio" id="intelligence"/>
-		<input type="radio" id="intelligence"/>
-		<input type="radio" id="intelligence"/>
-		<input type="radio" id="intelligence"/>
-	</div>
-	<div class="vg-field">
-		<label for="nom">Astuce</label>
-		<input type="radio" id="wits"/>
-		<input type="radio" id="wits"/>
-		<input type="radio" id="wits"/>
-		<input type="radio" id="wits"/>
-		<input type="radio" id="wits"/>
+		<div class="vg-field">
+		<label for="nom">Connaissances</label>
+		<select>
+			<option>Fort</option>
+			<option>Moyen</option>
+			<option>Faible</option>
+		</select>
 	</div>
 </form>
 @endsection
