@@ -28,7 +28,12 @@
 	</div>
 	<div class="vg-field">
 		<label for="nom">Clan</label>
-		<input type="text" id="clan"/>
+		<select>
+			<option>Choice 1</option>
+			<option>Choice 2</option>
+			<option>Choice 3</option>
+			<option>Choice 4</option>
+		</select>
 	</div>
 	<div class="vg-field">
 		<label for="nom">Génération</label>
