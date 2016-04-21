@@ -27,16 +27,14 @@
 		<label for="nom">Concept</label>
 	</div>
 	<div class="vg-field">
-		<input type="text" id="clan" required/>
-		<label for="nom">Clan</label>
-
-		<select>
-			<option>Choice 1</option>
-			<option>Choice 2</option>
-			<option>Choice 3</option>
-			<option>Choice 4</option>
-		</select>
-
+		<div class="styled-select">
+			<select>
+				<option>Clan</option>
+				<option>Choice 1</option>
+				<option>Choice 2</option>
+				<option>Choice 3</option>
+			</select>
+		</div>
 	</div>
 	<div class="vg-field">
 		<input type="text" id="generation" required/>
