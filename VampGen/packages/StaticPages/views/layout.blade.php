@@ -24,9 +24,10 @@
             <li><a href="">Connexion</a></li>
         </ul>
     </nav>
-    <h1>JE SUIS LA !!!!!!!!!!¡¡¡¡¡¡¡¡</h1>
-    @yield('content')
 
+    <div class="container">
+        @yield('content')
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>

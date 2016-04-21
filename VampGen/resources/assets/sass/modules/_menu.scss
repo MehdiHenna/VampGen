@@ -1,31 +1,15 @@
-/* Mini-reset */
-
-body {
-	padding:0;
-	margin:0;
-	box-sizing:border-box;
-}
-a {
-	text-decoration:none;
-	color:inherit;
-}
-ul li {
-	list-style-type:none;
-}
-
-/* Menu */
-
 .menu {
 
 	display:flex;
 	background-color:#d50000;
-	
+	padding:10px 30px 10px 0;
+    margin-bottom:50px;
+    
 	& ul {
     	display: flex;
     	flex-direction: row;
       	justify-content: flex-end;
     	width: 100%;
-    	padding-right:30px;
 
     	& li {
     		flex-direction: row;

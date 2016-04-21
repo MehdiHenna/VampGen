@@ -19,7 +19,7 @@
 		<input type="text" id="nom"/>
 		</div>
 		<div>
-			<button class="vg-button">envoyé</button>
+			<button class="button" type="submit" class="vg-button">envoyé</button>
 		</div>
 	</form>
 

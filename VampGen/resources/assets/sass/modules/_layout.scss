@@ -1,5 +1,15 @@
+body{
+	
+}
+
 .container{
 
+	@media screen and (min-width:1000px) {
+		width:940px;
+	}
+
+	width:100%;
+	margin:0 auto;
 }
 
 .row{
