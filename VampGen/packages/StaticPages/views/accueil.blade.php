@@ -42,6 +42,5 @@
 		<button class="vg-button">Envoyer</button>
 	</div>
 </form>
->>>>>>> 468c92112e0548b16eea1dc6f550aeaacf7a8b10
 
 @endsection
