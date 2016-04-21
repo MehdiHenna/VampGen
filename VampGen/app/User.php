@@ -23,4 +23,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function characters(){
+        return $this->hasMany(App\Character::class);
+    }
+    public function clan(){
+        return $this->belongsTo(App\Clan::class);
+    }
 }
