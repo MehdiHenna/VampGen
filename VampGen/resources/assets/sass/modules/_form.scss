@@ -1,11 +1,12 @@
 /* Style du input de type "text" */
 
 input[type="text"],input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"]{
-    
+    width: 30vw;
     padding: 10px 8px 10px 0;
     margin: 25px 0 20px 0;
     display: block;
     border:transparent;
+    background-color: transparent;
     border-bottom: 1px solid #ccc;
     transition: all 0.5s ease;
 
@@ -19,7 +20,7 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
 .vg-field select, .vg-field select:focus {
 
     font-size:14px;
-    width: 244px;
+    width: 30vw;
     height:40px;
     padding: 10px 5px 10px 0;
     margin: 15px 0 10px 0;
@@ -27,15 +28,13 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
     border:transparent;
     border-bottom: 1px solid #ccc;
     outline:0;
-    background: url(../img/downarrow.png) 96% / 5% no-repeat transparent;
+    background: url(../img/downarrow.png) 97%/4% no-repeat transparent;
 
 }
 
 .vg-field select option {
-    
     padding:6px 5px;
     box-shadow:none;
-    
 }
 .vg-field select option:hover {
     background-color:red;
@@ -53,8 +52,8 @@ input ~ label {
     pointer-events:none;
     position:absolute;
     top:10px;
-    transition:all 0.2s ease; 
-    -moz-transition:all 0.2s ease; 
+    transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
     -webkit-transition:all 0.2s ease;
 }
 

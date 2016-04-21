@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500italic,700italic,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
         <!--[if lt IE 8]>

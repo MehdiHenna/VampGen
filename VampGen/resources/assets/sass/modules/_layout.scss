@@ -1,10 +1,10 @@
 body{
-	
+
 }
 
 .container{
 
-	@media screen and (min-width:1000px) {
+	@media screen and (min-width:640px) {
 		width:940px;
 	}
 
@@ -14,4 +14,32 @@ body{
 
 .row{
 
+}
+.header{
+	font-size: 1em;
+	padding-left: 1em;
+	&.inverted{
+		color:#fff;
+	}
+}
+.center-aligned{
+	display: flex;
+	justify-content: center;
+}
+
+.segment{
+	width: 40vw;
+	height: 80vh;
+	background-color: #FAFAFA;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	&.attached{
+		height: 10vh;
+		line-height: 10vh;
+		box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.26);
+		background-color: #B71C1C;
+		&.top{
+			border-radius: 2px 2px 0 0;
+			border-bottom: 3px solid #E53935;
+		}
+	}
 }
