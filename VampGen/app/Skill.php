@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Skill extends Model
 {
     public function characters(){
-    	return $this->belongsToMany(App\Character::class);
+    	return $this->belongsToMany(App\Character::class, 'characters_has_skills');
     }
 }

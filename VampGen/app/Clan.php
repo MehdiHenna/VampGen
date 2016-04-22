@@ -10,6 +10,6 @@ class Clan extends Model
     	return $this->hasMany(App\Character::class);
     }
     public function disciplines(){
-    	return $this->hasMany(App\Discipline::class);
+    	return $this->belongsToMany(App\Discipline::class, 'clans_has_disciplines');
     }
 }
