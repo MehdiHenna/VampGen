@@ -3,7 +3,7 @@
 input[type="text"],input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"]{
     width: 30vw;
     padding: 10px 8px 10px 0;
-    margin: 25px 0 20px 0;
+    margin: 22px 0 10px 0;
     display: block;
     border:transparent;
     background-color: transparent;
@@ -15,9 +15,22 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
     }
 
 }
+/* Style du input de type "radio" */
+
+.vg-field .radio-input {
+    display:block;
+    padding:10px
+}
+.vg-field .radio-list-title {
+    padding:10px 0;
+}
+.vg-field .radio-input label {
+    padding-left:10px;
+}
+
 /* Style du input de type "select" */
 
-.vg-field select, .vg-field select:focus {
+.vg-field .select-field, .vg-field .select-field:focus {
 
     font-size:14px;
     width: 30vw;
@@ -32,11 +45,11 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
 
 }
 
-.vg-field select option {
+.vg-field .select-field option {
     padding:6px 5px;
     box-shadow:none;
 }
-.vg-field select option:hover {
+.vg-field .select-field option:hover {
     background-color:red;
 }
 
@@ -44,8 +57,10 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
 
 .vg-field {
     position:relative;
+    width:400px;
+    margin:0 auto;
 }
-input ~ label {
+input ~ .label-text {
     color:#666;
     font-size:16px;
     font-weight:normal;
@@ -57,10 +72,17 @@ input ~ label {
     -webkit-transition:all 0.2s ease;
 }
 
-/* Style du label actif (focus ou valide) */
+/* Style du .label-text actif (focus ou valide) */
 
-input:focus ~ label, input:valid ~ label {
+input:focus ~ .label-text, input:valid ~ .label-text {
     color:black;
     font-size:12px;
     top:-10px;
+}
+
+/* Informations du champ */
+
+.vg-field .info {
+    font-size:12px;
+    color:#ccc;
 }

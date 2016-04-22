@@ -9,13 +9,13 @@
 	& ul {
     	display: flex;
     	flex-direction: row;
-      	justify-content: flex-end;
+      justify-content: flex-end;
     	width: 100%;
 
     	& li {
     		flex-direction: row;
-      		justify-content: flex-end;
-      		padding:10px 0 10px 20px;
+      	justify-content: flex-end;
+      	padding:10px 0 10px 20px;
     	}
   	}
 
