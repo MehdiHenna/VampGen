@@ -36,7 +36,7 @@
 			<label for="sire" class="label-text">Sire</label>
 		</div>
 		<div class="center-aligned">
-			<button type="submit" class="vg-button">Envoyer</button>
+			<button type="submit" class="vg-button">Suivant</button>
 		</div>
 	</form>
 </div>

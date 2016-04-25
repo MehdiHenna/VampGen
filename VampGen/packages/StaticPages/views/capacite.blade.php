@@ -310,6 +310,10 @@
 					<input name="science" type="radio" id="science" value="5"/>
 				</div>
 			</div>
+			<div class="center-aligned">
+				<button class="vg-button">Précédent</button>
+				<button class="vg-button">Suivant</button>
+			</div>
 		</form>
 	</div>
 @endsection
