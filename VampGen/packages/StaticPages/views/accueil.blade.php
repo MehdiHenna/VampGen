@@ -6,7 +6,7 @@
 	</div>
 </div>
 <div class="container center-aligned segment">
-	<form action="/form" method="post" class="vg-form">
+	<form action="/character" method="post" class="vg-form">
 		{{csrf_field()}}
 		<input type="hidden" name="page" value="acceuil">
 		<div class="vg-field">

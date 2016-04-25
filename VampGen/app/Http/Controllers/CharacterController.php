@@ -8,24 +8,32 @@ use App\Http\Requests;
 
 class CharacterController extends Controller
 {
+
+    public function getIndex(){
+        return view('pages::accueil');
+    }
+
     public function postCharacter(Request $request){
-    	$data = Character::create([
-    		'id' => $request->get('id'),
-    		'name' => $request->get('name'),
-    		'nature' => $request->get('nature'),
-    		'demeanor' => $request->get('demeanor'),
-    		'sire' => $request->get('sire'),
-			
+        
+    	$this->validate($request,[
+    	
+    		'name' => 'require|max:20',
+    		'nature' => 'require',
+    		'demeanor' => 'require',
+    		'sire' => 'require|max:20',
+            'chronicle' => 'require',
+			'concept' => 'concept',
+
 
     		]);
-    	return redirect('/profil');
+    	return view('page::clan')->with('old', $request);
     }
 
     public function postClans(Request $request){
         $data = Clans::create([
             'id' => $request->get('id'),
             'name' => $request->get('name'),
-            ])
+            ]);
 
     }
 
