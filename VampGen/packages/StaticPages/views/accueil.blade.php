@@ -9,35 +9,30 @@
 	<form action="/form" method="post" class="vg-form">
 		{{csrf_field()}}
 		<div class="vg-field">
-			<input type="text" id="nom" name="name" required autocomplete="off" />
-			<label for="nom" class="label-text">Nom</label>
+			<input type="text" id="name" required autocomplete="off"  name="name"/>
+			<label for="name" class="label-text">Nom</label>
 			<p class="info">C'est votre nom de joueur</p>
 		</div>
 		<div class="vg-field">
-			<input type="text" id="chronique" required autocomplete="off"/>
-			<label for="nom" class="label-text">Chronique</label>
+			<input type="text" id="chronicle" required autocomplete="off" name="chronicle"/>
+			<label for="chronicle" class="label-text">Chronique</label>
 			<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, itaque, eius. Expedita sint est asperiores, perferendis doloribus placeat provident velit dicta cum iusto vero culpa, sed accusamus corrupti. Pariatur, voluptate?</p>
 		</div>
 		<div class="vg-field">
-			<input type="text" id="nature" required autocomplete="off"/>
-			<label for="nom" class="label-text">Nature</label>
+			<input type="text" id="nature" required autocomplete="off" name="nature"/>
+			<label for="nature" class="label-text">Nature</label>
 		</div>
 		<div class="vg-field">
-			<input type="text" id="attitude" required autocomplete="off"/>
-			<label for="nom" class="label-text">Attitude</label>
+			<input type="text" id="demeanor" required autocomplete="off" name="demeanor"/>
+			<label for="demeanor" class="label-text">Attitude</label>
 		</div>
 		<div class="vg-field">
-			<input type="text" id="concept" required autocomplete="off"/>
-			<label for="nom" class="label-text">Concept</label>
-		</div>
-
-		<div class="vg-field">
-			<input type="text" id="generation" required/>
-			<label for="nom" class="label-text">Génération</label>
+			<input type="text" id="concept" required autocomplete="off" name="concept"/>
+			<label for="concept" class="label-text">Concept</label>
 		</div>
 		<div class="vg-field">
-			<input type="text" id="refuge" required/>
-			<label for="nom" class="label-text">Refuge</label>
+			<input type="text" id="sire" required name="sire"/>
+			<label for="sire" class="label-text">Sire</label>
 		</div>
 		<div class="center-aligned">
 			<button type="submit" class="vg-button">Envoyer</button>
