@@ -6,7 +6,8 @@
 	</div>
 </div>
 <div class="container center-aligned segment">
-	<form action="" method="post" class="vg-form">
+	<form action="/form" method="post" class="vg-form">
+		{{csrf_field()}}
 		<div class="vg-field">
 			<input type="text" id="name" required autocomplete="off"  name="name"/>
 			<label for="name" class="label-text">Nom</label>
