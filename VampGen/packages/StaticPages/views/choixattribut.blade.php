@@ -2,7 +2,7 @@
 @section('content')
 <div class="center-aligned ">
 	<div class="segment attached top">
-		<h2 class="header inverted">Choisissez la répartition de vos points</h2 class="header">
+		<h2 class="header inverted">Choisissez la répartition de vos points d'attributs</h2 class="header">
 		</div>
 	</div>
 	<div class="container center-aligned segment">
@@ -32,7 +32,10 @@
 					<option value="faible">Faible</option>
 				</select>
 			</div>
-			<button class="vg-button">Précédent</button><button class="vg-button">Suivant</button>
+			<div class="center-aligned">
+				<button class="vg-button">Précédent</button>
+				<button class="vg-button">Suivant</button>
+			</div>
 		</form>
 	</div>
 @endsection
