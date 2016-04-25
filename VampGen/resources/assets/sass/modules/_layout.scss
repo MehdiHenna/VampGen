@@ -15,22 +15,12 @@ body{
 .row{
 
 }
-.header{
-	font-size: 1em;
-	padding-left: 1em;
-	&.inverted{
-		color:#fff;
-	}
-}
-.center-aligned{
-	display: flex;
-	justify-content: center;
-}
 
 .segment{
 	width: 40vw;
-	height: 80vh;
+	height: auto;
 	background-color: #FAFAFA;
+	padding:1.3em;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	&.attached{
 		height: 10vh;
@@ -42,4 +32,20 @@ body{
 			border-bottom: 3px solid #E53935;
 		}
 	}
+}
+
+
+.header{
+	font-size: 1em;
+	padding-left: 1em;
+	&.inverted{
+		color:#fff;
+	}
+}
+
+
+
+.center-aligned{
+	display: flex;
+	justify-content: center;
 }
