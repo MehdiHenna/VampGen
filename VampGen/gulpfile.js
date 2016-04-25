@@ -22,6 +22,6 @@ var browserify = ('browserify');
 
  elixir(function(mix){
  	mix.browserSync({
- 		proxy:'vampgit branchgen.dev'
+ 		proxy:'vampgen.dev'
  	});
  });
