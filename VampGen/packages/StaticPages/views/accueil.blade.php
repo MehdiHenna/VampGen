@@ -6,9 +6,10 @@
 	</div>
 </div>
 <div class="container center-aligned segment">
-	<form action="" method="post" class="vg-form">
+	<form action="/form" method="post" class="vg-form">
+		{{csrf_field()}}
 		<div class="vg-field">
-			<input type="text" id="nom" required autocomplete="off" />
+			<input type="text" id="nom" name="name" required autocomplete="off" />
 			<label for="nom" class="label-text">Nom</label>
 			<p class="info">C'est votre nom de joueur</p>
 		</div>
@@ -41,7 +42,6 @@
 		<div class="center-aligned">
 			<button type="submit" class="vg-button">Envoyer</button>
 		</div>
-		
 	</form>
 </div>
 

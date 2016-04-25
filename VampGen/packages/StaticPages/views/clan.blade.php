@@ -8,6 +8,7 @@
 </div>
 <div class="container center-aligned segment">
 	<form action="" method="post" class="vg-form">
+			<input type="hidden" name="name" value="{{$old->name}}" />
 		<div class="column">
 			<div class="vg-field">
 				<p class="radio-list-title">Clans</p>
@@ -23,7 +24,7 @@
 						<input name="clan" type="radio" id="tremere" value="tremere">
 						<label for="tremere">Tremere</label>
 					</div>
-				<div class="radio-input">	   			
+				<div class="radio-input">
 						<input name="clan" type="radio" id="lasombra" value="lasombra">
 						<label for="lasombra">Lasombra</label>
 					</div>
