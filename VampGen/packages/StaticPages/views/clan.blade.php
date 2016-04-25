@@ -8,7 +8,13 @@
 </div>
 <div class="container center-aligned segment">
 	<form action="" method="post" class="vg-form">
+	<input type="hidden" name="page" value="clan">
 			<input type="hidden" name="name" value="{{$old->name}}" />
+			<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
+			<input type="hidden" name="nature" value="{{$old->nature}}" />
+			<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
+			<input type="hidden" name="concept" value="{{$old->concept}}" />
+			<input type="hidden" name="sire" value="{{$old->sire}}" />
 		<div class="column">
 			<div class="vg-field">
 				<p class="radio-list-title">Clans</p>
