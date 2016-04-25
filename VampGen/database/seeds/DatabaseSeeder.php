@@ -16,10 +16,19 @@ class DatabaseSeeder extends Seeder
     			'username' => str_random(10),
     			'email' => str_random(10).'@gmail.com',
     			'password' => bcrypt('secret'),
-
+                   
 
     			]);
+
+            DB::table('users')->insert([
+                'username' => 'tsimisse',
+                'email' => 'tsimisse@gmail.com',
+                'passeword' => bcrypt('secret'),
+
+                ])
     	}
-    	$this->call(UsersTableSeeder::class);	
+    	$this->call(UsersTableSeeder::class);
+
+
     }
 }

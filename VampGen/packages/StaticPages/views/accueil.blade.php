@@ -95,6 +95,7 @@
 		<div class="center-aligned">
 			<button type="submit" class="vg-button">Envoyer</button>
 		</div>
+		
 	</form>
 </div>
 
