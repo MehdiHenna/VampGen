@@ -1,29 +1,41 @@
 @extends(config('pages.pages_template'))
 @section('content')
-<form action="" method="post" class="vg-form">
-	<div class="vg-field">
-		<label for="nom">Talents</label>
-		<select>
-			<option>Fort</option>
-			<option>Moyen</option>
-			<option>Faible</option>
-		</select>
+<div class="center-aligned ">
+	<div class="segment attached top">
+		<h2 class="header inverted">Choisissez la répartition de vos points de capacités</h2 class="header">
+		</div>
 	</div>
-	<div class="vg-field">
-		<label for="nom">Compétences</label>
-		<select>
-			<option>Fort</option>
-			<option>Moyen</option>
-			<option>Faible</option>
-		</select>
+	<div class="container center-aligned segment">
+		<form action="" method="post" class="vg-form">
+			<p class="info-etape">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, itaque, eius. Expedita sint est asperiores, perferendis doloribus placeat provident velit dicta cum iusto vero culpa, sed accusamus corrupti. Pariatur, voluptate?</p>
+			<div class="vg-field">
+				<label for="talents">Talents</label>
+				<select class="select-field">
+					<option value="fort">Fort</option>
+					<option value="moyen">Moyen</option>
+					<option value="faible">Faible</option>
+				</select>
+			</div>
+			<div class="vg-field">
+				<label for="skills">Compétences</label>
+				<select class="select-field">
+					<option value="fort">Fort</option>
+					<option value="moyen">Moyen</option>
+					<option value="faible">Faible</option>
+				</select>
+			</div>
+			<div class="vg-field">
+				<label for="knowledges">Connaissances</label>
+				<select class="select-field">
+					<option value="fort">Fort</option>
+					<option value="moyen">Moyen</option>
+					<option value="faible">Faible</option>
+				</select>
+			</div>
+			<div class="center-aligned">
+				<button class="vg-button">Précédent</button>
+				<button class="vg-button">Suivant</button>
+			</div>
+		</form>
 	</div>
-		<div class="vg-field">
-		<label for="nom">Connaissances</label>
-		<select>
-			<option>Fort</option>
-			<option>Moyen</option>
-			<option>Faible</option>
-		</select>
-	</div>
-</form>
 @endsection
