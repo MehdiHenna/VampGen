@@ -3,6 +3,16 @@
 <h3>Attributs</h3>
 <h4>Physique</h4>
 <form action="" method="post" class="vg-form">
+			<input type="hidden" name="page" value="attribut" />
+			
+			<input type="hidden" name="sect" value="{{$old->sect}}" />
+			<input type="hidden" name="clan" value="{{$old->clan}}" />
+			<input type="hidden" name="name" value="{{$old->name}}" />
+			<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
+			<input type="hidden" name="nature" value="{{$old->nature}}" />
+			<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
+			<input type="hidden" name="concept" value="{{$old->concept}}" />
+			<input type="hidden" name="sire" value="{{$old->sire}}" />
 	<div class="vg-field">
 		<label for="nom">Force</label>
 		<input type="radio" id="strength"/>

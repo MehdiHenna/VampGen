@@ -8,42 +8,58 @@ use App\Http\Requests;
 
 class CharacterController extends Controller
 {
-
     public function getIndex(){
         return view('pages::accueil');
     }
-
+    public function postIndex(Request $request){
+        return view('pages::accueil')->with('old', $request);
+    }
     public function postCharacter(Request $request){
         
     	$this->validate($request,[
-    	
-    		'name' => 'require|max:20',
-    		'nature' => 'require',
-    		'demeanor' => 'require',
-    		'sire' => 'require|max:20',
-            'chronicle' => 'require',
-			'concept' => 'concept',
+    	   'page'=>'required',
+
+    		'name' => 'required|max:20',
+    		'nature' => 'required',
+    		'demeanor' => 'required',
+    		'sire' => 'required|max:20',
+            'chronicle' => 'required',
+			'concept' => 'required',
 
 
     		]);
-    	return view('page::clan')->with('old', $request);
+    	return view('pages::clan')->with('old', $request);
     }
-
     public function postClans(Request $request){
-        $data = Clans::create([
-            'id' => $request->get('id'),
-            'name' => $request->get('name'),
+        $this->validate($request,[
+                'clan' => 'required',
+                'sect' => 'required',
             ]);
+        return view('pages::capacitevampire')->with('old', $request);               
 
     }
 
-    public function PostDisciplines (Request $request){
-        $data= Disciplines::create([
-            'id' => $request->get('id'),
-            'name' => $request->get('name'),
-            'max' => $request->get('max'),
+    public function postDisciplines(Request $request) {
+        $this->validate($request,[
+                'Disciplines1' => 'required',
+                'Disciplines2' => 'required',
+                'Dispcilines3' => 'required',
             ]);
+        return view('pages::choixattribut')->with('old', $request);
     }
+
+    public function postChoiceCapacities(Request $request){
+        $this->validate($request,[
+                'talents' => 'required',
+                'skills' => 'required',
+                'knowledges' => 'required'
+            ]);
+        return view('pages::attribut')->with('old', $request);               
+
+    }
+
+
+    
 
     public function postSkills (Request $request) {
         $data = Skills::create([

@@ -7,7 +7,8 @@
 	</div>
 </div>
 <div class="container center-aligned segment">
-	<form action="" method="post" class="vg-form">
+	<form action="/clans" method="post" class="vg-form">
+	{{csrf_field()}}
 	<input type="hidden" name="page" value="clan">
 			<input type="hidden" name="name" value="{{$old->name}}" />
 			<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
@@ -19,7 +20,7 @@
 			<div class="vg-field">
 				<p class="radio-list-title">Clans</p>
 				<div class="radio-input">
-					<input name="clan" type="radio" id="brujah" checked="checked" value="">
+					<input name="clan" type="radio" id="brujah" checked="checked" value="brujah">
 					<label for="brujah">Brujah</label>
 				</div>
 				<div class="radio-input">
@@ -89,7 +90,8 @@
 				</div>
 			</div>
 		</div>
-		<button class="vg-button">Précédent</button><button class="vg-button">Suivant</button>
+		<button type="submit" formaction="/" class="vg-button">Précédent</button>
+		<button type="submit" formaction="/clan" class="vg-button">Suivant</button>
 	</form>
 </div>
 @endsection
