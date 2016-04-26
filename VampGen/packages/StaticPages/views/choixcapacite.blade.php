@@ -33,8 +33,8 @@
 				</select>
 			</div>
 			<div class="center-aligned">
-				<button class="vg-button">Précédent</button>
-				<button class="vg-button">Suivant</button>
+				<button type="submit" class="vg-button">Précédent</button>
+				<button type="submit" class="vg-button">Suivant</button>
 			</div>
 		</form>
 	</div>

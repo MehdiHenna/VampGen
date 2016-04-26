@@ -29,6 +29,7 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
     padding:10px
 }
 .vg-field .radio-list-title {
+    width:0;
     padding:10px 0;
 }
 .vg-field .radio-input label {
@@ -64,7 +65,7 @@ input[type="text"],input[type="password"], input[type="email"], input[type="url"
 
 .vg-field {
     position:relative;
-    width:400px;
+    // width:30vw;
     margin:0 auto;
 }
 input ~ .label-text {
