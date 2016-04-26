@@ -6,7 +6,7 @@
 		</div>
 	</div>
 	<div class="container center-aligned segment">
-		<form action="" method="post" class="vg-form">
+		<form action="/choixcapacite" method="post" class="vg-form">
 		{{csrf_field()}}
 			<input type="hidden" name="page" value="clan" />
 			<input type="hidden" name="sect" value="{{$old->sect}}" />
