@@ -13,27 +13,27 @@
 			<input type="hidden" name="sire" value="{{$old->sire}}" />
 	<div class="vg-field">
 		<label for="Disciplines1">Célérité</label>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
+		<input name="celerity" type="radio" id="celerity" value="1"/>
+		<input name="celerity" type="radio" id="celerity" value="2"/>
+		<input name="celerity" type="radio" id="celerity" value="3"/>
+		<input name="celerity" type="radio" id="celerity" value="4"/>
+		<input name="celerity" type="radio" id="celerity" value="5"/>
 	</div>
 	<div class="vg-field">
 		<label for="Disciplines2">Occultation</label>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
+		<input name="occultation" type="radio" id="occultation" value="1"/>
+		<input name="occultation" type="radio" id="occultation" value="2"/>
+		<input name="occultation" type="radio" id="occultation" value="3"/>
+		<input name="occultation" type="radio" id="occultation" value="4"/>
+		<input name="occultation" type="radio" id="occultation" value="5"/>
 	</div>
 	<div class="vg-field">
 		<label for="Disciplines3">Quietus</label>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
-		<input type="radio" id="strength"/>
+		<input name="quietus" type="radio" id="quietus" value="1"/>
+		<input name="quietus" type="radio" id="quietus" value="2"/>
+		<input name="quietus" type="radio" id="quietus" value="3"/>
+		<input name="quietus" type="radio" id="quietus" value="4"/>
+		<input name="quietus" type="radio" id="quietus" value="5"/>
 	</div>
 	<button type="submit" formaction="/clans" class="vg-button">Précédent</button>
 				<button type="submit" formaction="/disciplines" class="vg-button">Suivant</button>
