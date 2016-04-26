@@ -1,18 +1,18 @@
 @extends(config('pages.pages_template'))
 @section('content')
 
-<div class="center-aligned ">
+<div class="">
 	<div class="segment attached top">
 		<h2 class="header inverted">Choisissez votre clan et votre secte</h2 class="header">
 		</div>
 	</div>
-	<div class="container center-aligned segment">
+	<div class="segment">
 		<form action="" method="post" class="vg-form">
 			<div class="column">
 				<div class="vg-field">
 					<p class="radio-list-title">Clans</p>
 					<div class="radio-input">
-						<input name="clan" type="radio" id="brujah" checked="checked" value="">
+						<input name="clan" type="radio" id="brujah" checked="checked" value="Brujah">
 						<label for="brujah">Brujah</label>
 					</div>
 					<div class="radio-input">
@@ -81,8 +81,8 @@
 				</div>
 			</div>
 			<div class="center-aligned">
-				<button class="vg-button">Précédent</button>
-				<button class="vg-button">Suivant</button>
+				<button type="submit" class="vg-button">Précédent</button>
+				<button type="submit" class="vg-button">Suivant</button>
 			</div>
 		</form>
 	</div>

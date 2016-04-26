@@ -5,38 +5,40 @@
 		<h2 class="header inverted">Générateur pour la création de personnage de vampire</h2 class="header">
 	</div>
 </div>
-<div class="container center-aligned segment">
+<div class="segment">
 	<form action="/form" method="post" class="vg-form">
-		{{csrf_field()}}
-		<div class="vg-field">
-			<input type="text" id="name" required autocomplete="off"  name="name"/>
-			<label for="name" class="label-text">Nom</label>
-			<p class="info">C'est votre nom de joueur</p>
-		</div>
-		<div class="vg-field">
-			<input type="text" id="chronicle" required autocomplete="off" name="chronicle"/>
-			<label for="chronicle" class="label-text">Chronique</label>
-			<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, itaque, eius. Expedita sint est asperiores, perferendis doloribus placeat provident velit dicta cum iusto vero culpa, sed accusamus corrupti. Pariatur, voluptate?</p>
-		</div>
-		<div class="vg-field">
-			<input type="text" id="nature" required autocomplete="off" name="nature"/>
-			<label for="nature" class="label-text">Nature</label>
-		</div>
-		<div class="vg-field">
-			<input type="text" id="demeanor" required autocomplete="off" name="demeanor"/>
-			<label for="demeanor" class="label-text">Attitude</label>
-		</div>
-		<div class="vg-field">
-			<input type="text" id="concept" required autocomplete="off" name="concept"/>
-			<label for="concept" class="label-text">Concept</label>
-		</div>
-		<div class="vg-field">
-			<input type="text" id="sire" required name="sire"/>
-			<label for="sire" class="label-text">Sire</label>
-		</div>
-		<div class="center-aligned">
-			<button type="submit" class="vg-button">Suivant</button>
-		</div>
+<div>
+	{{csrf_field()}}
+	<div class="vg-field">
+		<input type="text" id="name" required autocomplete="off"  name="name"/>
+		<label for="name" class="label-text">Nom</label>
+		<p class="info">C'est votre nom de joueur</p>
+	</div>
+	<div class="vg-field">
+		<input type="text" id="chronicle" required autocomplete="off" name="chronicle"/>
+		<label for="chronicle" class="label-text">Chronique</label>
+		<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, itaque, eius. Expedita sint est asperiores, perferendis doloribus placeat provident velit dicta cum iusto vero culpa, sed accusamus corrupti. Pariatur, voluptate?</p>
+	</div>
+	<div class="vg-field">
+		<input type="text" id="nature" required autocomplete="off" name="nature"/>
+		<label for="nature" class="label-text">Nature</label>
+	</div>
+	<div class="vg-field">
+		<input type="text" id="demeanor" required autocomplete="off" name="demeanor"/>
+		<label for="demeanor" class="label-text">Attitude</label>
+	</div>
+	<div class="vg-field">
+		<input type="text" id="concept" required autocomplete="off" name="concept"/>
+		<label for="concept" class="label-text">Concept</label>
+	</div>
+	<div class="vg-field">
+		<input type="text" id="sire" required name="sire"/>
+		<label for="sire" class="label-text">Sire</label>
+	</div>
+	<div class="center-aligned">
+		<button type="submit" class="vg-button">Suivant</button>
+	</div>
+</div>
 	</form>
 </div>
 
