@@ -43,8 +43,10 @@
 				</select>
 			</div>
 			<div class="center-aligned">
+
 				<button type="submit" formaction="/clan" class="vg-button">Précédent</button>
 				<button type="submit" formaction="/choice-capacities" class="vg-button">Suivant</button>
+
 			</div>
 		</form>
 	</div>

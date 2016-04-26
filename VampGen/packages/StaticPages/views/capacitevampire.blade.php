@@ -35,5 +35,7 @@
 		<input type="radio" id="strength"/>
 		<input type="radio" id="strength"/>
 	</div>
+	<button type="submit" formaction="/clan" class="vg-button">Précédent</button>
+				<button type="submit" formaction="/choice-capacities" class="vg-button">Suivant</button>
 </form>
 @endsection

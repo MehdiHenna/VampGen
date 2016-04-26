@@ -5,7 +5,7 @@
 		<h2 class="header inverted">Choisissez la répartition de vos points d'attributs</h2 class="header">
 		</div>
 	</div>
-	<div class="container center-aligned segment">
+	<div class="segment row">
 		<form action="" method="post" class="vg-form">
 		{{csrf_field()}}
 		<input type="hidden" name="page" value="clan" />
@@ -43,8 +43,8 @@
 				</select>
 			</div>
 			<div class="center-aligned">
-				<button class="vg-button">Précédent</button>
-				<button class="vg-button">Suivant</button>
+				<button type="submit" class="vg-button">Précédent</button>
+				<button type="submit" class="vg-button">Suivant</button>
 			</div>
 		</form>
 	</div>

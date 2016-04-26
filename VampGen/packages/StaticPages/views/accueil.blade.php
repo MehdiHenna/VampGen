@@ -5,7 +5,8 @@
 		<h2 class="header inverted">Générateur pour la création de personnage de vampire</h2 class="header">
 	</div>
 </div>
-<div class="container center-aligned segment">
+
+<div class="segment">
 	<form action="/character" method="post" class="vg-form">
 		{{csrf_field()}}
 		<input type="hidden" name="page" value="accueil">
