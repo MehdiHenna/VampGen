@@ -97,7 +97,7 @@
 		</div>
 		<div class="center-aligned">
 		<button type="submit" formaction="/" class="vg-button">Précédent</button>
-		<button type="submit" formaction="/clan" class="vg-button">Suivant</button>
+		<button type="submit" formaction="/clans" class="vg-button">Suivant</button>
 		</div>
 	</form>
 </div>
