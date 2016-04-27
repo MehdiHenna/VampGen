@@ -9,17 +9,16 @@
 
 </div>
 <div class="container center-aligned segment">
-	<form action="/capacitevampire" method="post" class="vg-form">
-		{{csrf_field()}}
-		<input type="hidden" name="page" value="{{$old->clan}}">
-		<input type="hidden" name="name" value="{{$old->name}}" />
-		<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
-		<input type="hidden" name="nature" value="{{$old->nature}}" />
-		<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
-		<input type="hidden" name="concept" value="{{$old->concept}}" />
-		<input type="hidden" name="sire" value="{{$old->sire}}" />
+	<form method="post" class="vg-form">
 		<div class="segment">
-			<form action="" method="post" class="vg-form">
+		{{csrf_field()}}
+		<input type="hidden" name="page" value="clan">
+		<input type="hidden" name="name" value="{{old('name')}}" />
+		<input type="hidden" name="chronicle" value="{{old('chronicle')}}" />
+		<input type="hidden" name="nature" value="{{old('nature')}}" />
+		<input type="hidden" name="demeanor" value="{{old('demeanor')}}" />
+		<input type="hidden" name="concept" value="{{old('concept')}}" />
+		<input type="hidden" name="sire" value="{{old('sire')}}" />
 				<div class="column">
 					<div class="vg-field">
 						<p class="radio-list-title">Clans</p>
@@ -96,8 +95,8 @@
 
 			</div>
 			<div class="center-aligned">
-				<button type="submit" formaction="/" class="vg-button">Précédent</button>
-				<button type="submit" formaction="/clans" class="vg-button">Suivant</button>
+				<button type="submit" formaction="/character" formmethod="get" class="vg-button">Précédent</button>
+				<button type="submit" formaction="/disciplines" class="vg-button">Suivant</button>
 			</div>
 		</form>
 	</div>

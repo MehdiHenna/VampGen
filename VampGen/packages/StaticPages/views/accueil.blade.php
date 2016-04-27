@@ -7,7 +7,7 @@
 </div>
 
 <div class="segment">
-	<form action="/character" method="post" class="vg-form">
+	<form action="" method="post" class="vg-form">
 		{{csrf_field()}}
 		<input type="hidden" name="page" value="accueil">
 		<div class="vg-field">
@@ -37,7 +37,7 @@
 			<label for="sire" class="label-text">Sire</label>
 		</div>
 		<div class="center-aligned">
-			<button type="submit" class="vg-button">Suivant</button>
+			<button type="submit" formaction="/character" class="vg-button">Suivant</button>
 		</div>
 	</form>
 </div>

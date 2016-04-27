@@ -8,7 +8,9 @@
 	<div class="container center-aligned segment">
 		<form action="/choixcapacite" method="post" class="vg-form">
 		{{csrf_field()}}
-			<input type="hidden" name="page" value="clan" />
+			<input type="hidden" name="page" value="{{$old->celerity}}" />
+			<input type="hidden" name="page" value="{{$old->occultation}}" />
+			<input type="hidden" name="page" value="{{$old->quietus}}" />
 			<input type="hidden" name="sect" value="{{$old->sect}}" />
 			<input type="hidden" name="clan" value="{{$old->clan}}" />
 			<input type="hidden" name="name" value="{{$old->name}}" />
