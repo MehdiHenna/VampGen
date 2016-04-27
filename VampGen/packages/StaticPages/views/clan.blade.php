@@ -1,7 +1,7 @@
 @extends(config('pages.pages_template'))
 @section('content')
 
-<div class="">
+<div>
 	<div class="segment attached top">
 		<h2 class="header inverted">Choisissez votre clan et votre secte</h2>
 	</div>
@@ -15,7 +15,7 @@
 		<input type="hidden" name="nature" value="{{$old->nature}}" />
 		<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
 		<input type="hidden" name="concept" value="{{$old->concept}}" />
-		<input type="hidden" name="sire" value="{{$old->sire}}" />
+		<input type="hidden" name="sire" value="{{$old->sireghbb}}" />
 	</form>
 	<form action="" method="post" class="vg-form">
 		<div class="column">

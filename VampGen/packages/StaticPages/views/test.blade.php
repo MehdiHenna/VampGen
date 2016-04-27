@@ -3,25 +3,13 @@
 <div class="segment attached top center-aligned">
 	<h3 class="header inverted">Title</h3>
 </div>
-<div class="column">
-
-	<div class="segment">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-
-		<div class="segment">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-
-		</div>
-		@endsection
+<div class="segment">
+	<h3>Quelle capacité est la plus <em class="value-talent">forte</em> ?</h3>
+	<label>Talent</label>
+	<input type="radio" class="talent" value="talent" name="capacite">
+	<label>Connaissance</label>
+	<input type="radio" class="talent" value="connaissance" name="capacite">
+	<label>Compétences</label>
+	<input type="radio" class="talent" value="competence" name="capacite">
+</div>
+@endsection

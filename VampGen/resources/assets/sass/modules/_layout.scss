@@ -30,21 +30,22 @@ body{
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	margin: 0 0 50px 0;
 	padding-bottom:20px;
-	&.attached{
-		height: 10vh;
-		line-height: 10vh;
-		box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.26);
-		background-color: $dark-red;
-		margin:0;
-		padding:0;
-		&.top{
-			border-radius: 2px 2px 0 0;
-			border-bottom: 3px solid $light-red;
-		}
-		&.bottom{
-			border-radius: 0 0 2px 2px;
-			border-top: 3px solid $light-red;
-		}
+}
+
+.attached{
+	height: 10vh;
+	line-height: 10vh;
+	box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.26);
+	background-color: $dark-red;
+	margin:0;
+	padding:0;
+	&.top{
+		border-radius: 2px 2px 0 0;
+		border-bottom: 3px solid $light-red;
+	}
+	&.bottom{
+		border-radius: 0 0 2px 2px;
+		border-top: 3px solid $light-red;
 	}
 }
 
