@@ -3,20 +3,7 @@
 <h3>Attributs</h3>
 <h4>Physique</h4>
 <form action="" method="post" class="vg-form">
-			<input type="hidden" name="mental" value="{{$old->mental}}" />
-			<input type="hidden" name="social" value="{{$old->social}}" />
-			<input type="hidden" name="physical" value="{{$old->physical}}" />
-			<input type="hidden" name="celerity" value="{{$old->celerity}}" />
-			<input type="hidden" name="occultation" value="{{$old->occultation}}" />
-			<input type="hidden" name="quietus" value="{{$old->quietus}}" />
-			<input type="hidden" name="sect" value="{{$old->sect}}" />
-			<input type="hidden" name="clan" value="{{$old->clan}}" />
-			<input type="hidden" name="name" value="{{$old->name}}" />
-			<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
-			<input type="hidden" name="nature" value="{{$old->nature}}" />
-			<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
-			<input type="hidden" name="concept" value="{{$old->concept}}" />
-			<input type="hidden" name="sire" value="{{$old->sire}}" />
+			
 	<div class="vg-field">
 		<label for="strength">Force</label>
 		<input name="strength" type="radio" id="strength" value="1" />

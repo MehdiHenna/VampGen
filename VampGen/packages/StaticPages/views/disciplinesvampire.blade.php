@@ -2,16 +2,7 @@
 @section('content')
 <h3>Disciplines</h3>
 <form  method="post" class="vg-form">
-			{{csrf_field()}}
-			<input type="hidden" name="page" value="capacitevampire" />
-			<input type="hidden" name="sect" value="{{$old->sect}}" />
-			<input type="hidden" name="clan" value="{{$old->clan}}" />
-			<input type="hidden" name="name" value="{{$old->name}}" />
-			<input type="hidden" name="chronicle" value="{{$old->chronicle}}" />
-			<input type="hidden" name="nature" value="{{$old->nature}}" />
-			<input type="hidden" name="demeanor" value="{{$old->demeanor}}" />
-			<input type="hidden" name="concept" value="{{$old->concept}}" />
-			<input type="hidden" name="sire" value="{{$old->sire}}" />
+	{{csrf_field()}}
 	<div class="vg-field">
 		<label for="Disciplines1">Célérité</label>
 		<input name="celerity" type="radio" id="celerity" value="1"/>
@@ -37,6 +28,6 @@
 		<input name="quietus" type="radio" id="quietus" value="5"/>
 	</div>
 	<button type="submit" formaction="/clans" class="vg-button">Précédent</button>
-	<button type="submit" formaction="/clans" class="vg-button">Suivant</button>
+	<button type="submit" formaction="/choise-attributtes" class="vg-button">Suivant</button>
 </form>
 @endsection
