@@ -54,6 +54,19 @@ ENGINE = MyISAM;
 
 
 -- -----------------------------------------------------
+-- Table `vampgen`.`categories`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `vampgen`.`categories` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `fort` INT NULL,
+  `moyen` INT NULL,
+  `faible` INT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `vampgen`.`skills`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `vampgen`.`skills` (
@@ -63,7 +76,14 @@ CREATE TABLE IF NOT EXISTS `vampgen`.`skills` (
   `created_at` TIMESTAMP NULL,
   `deleted_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`id`))
+  `category_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `category_id`),
+  INDEX `fk_skills_categories1_idx` (`category_id` ASC),
+  CONSTRAINT `fk_skills_categories1`
+    FOREIGN KEY (`category_id`)
+    REFERENCES `vampgen`.`categories` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -72,7 +92,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `vampgen`.`characters_has_skills` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `character_user_id` VARCHAR(45) NOT NULL,
+  `character_user_id` INT NOT NULL,
   `character_id` INT NOT NULL,
   `skill_id` INT NOT NULL,
   `created_at` TIMESTAMP NULL,
