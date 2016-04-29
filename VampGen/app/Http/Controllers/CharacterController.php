@@ -6,6 +6,8 @@ use Validator;
 use Illuminate\Http\Request;
 use App\Character;
 use App\Http\Requests;
+use Auth;
+use Session;
 
 class CharacterController extends Controller
 {
@@ -27,7 +29,11 @@ class CharacterController extends Controller
             'chronicle' => 'required',
             'concept' => 'required',
             ]);
-        return redirect('/clan')->with('old', $request);
+            if(!Auth::check()){
+               Auth::loginUsingId(1);     
+            }
+            Session::put($request->except('_token'));
+        return redirect('/clan');
     }
 
     public function getClan(Request $request){
@@ -40,14 +46,15 @@ class CharacterController extends Controller
             ['clan' => 'required',
             'sect' => 'required'
             ]);
-        return redirect('/discplines')->with('old', $request);
+            Session::put($request->except('_token'));
+        return redirect('/disciplines');
     }
     public function getDisciplines(Request $request){
             //page choixattribut.blade.php
         return view('pages::disciplinesvampire');               
     }
 
-    public function postChoiceAttributes(Request $request) {
+    public function postDisciplines(Request $request) {
         //page attribut
         $validator = Validator::make(
             $request->all(),
@@ -55,10 +62,15 @@ class CharacterController extends Controller
             'occultation' => 'required',
             'quietus' => 'required'
             ]);
-        return view('pages::choixattribut')->with('old', $request);
+        Session::put($request->except('_token'));
+        return redirect('/choice-attributtes');
     }
 
-    public function postAttributtes(Request $request){
+    public function getChoiceAttributtes(Request $request){
+        return view('pages::choixattribut');
+    }
+
+    public function postChoiseAttributtes(Request $request){
         // choix capacite
             $validator = Validator::make(
             $request->all(),
@@ -66,11 +78,16 @@ class CharacterController extends Controller
             'skills' => 'required',
             'knowledges' => 'required'
             ]);
-        return view('pages::attribut')->with('old', $request);               
+        Session::put($request->except('_token'));    
+        return redirect('/choice-abilities');               
 
     }
 
-    public function postChoiceAbilities(Request $request){
+    public function getAttributes(Request $request){
+        return view('pages::attribut');
+    }
+
+    public function postAttributes(Request $request){
         $validator = Validator::make(
             $request->all(),
             ['strength' => 'required',
@@ -79,18 +96,85 @@ class CharacterController extends Controller
             'charisma' => 'required',
             'manipulation' => 'required',
             'appearence' => 'required',
+            'perception' => 'required',
             'intelligence' => 'required',
             'wits' => 'required'
             ]);
-        return view('pages::choixcapacite')->with('old', $request);
+        Session::put($request->except('_token'));
+        return redirect('/choise-abilities');
     }
 
-    public function postAdvantages(Request $request){
-        
+    public function getChoiceAbilities(Request $request){
+        return view('pages::choixcapacite');
     }
-    
 
-    public function postSkills (Request $request) {
-
+    public function postChoiseAbilities(Request $request){
+        $validator = Validator::make(
+            $request->all(),
+            ['talents' => 'required',
+            'skills' => 'required',
+            'knowledges' => 'required'  
+            ]);
+        Session::put($request->except('_token'));
+        return redirect('/abilities');        
+    }
+    public function postAbilities (Request $request) {
+        return view('pages::capacite');
+    }
+    public function getAbilities (Request $request) {
+        $validator = Validator::make(
+            $request->all(),
+            ['Alertness' => 'required',
+            'athletics' => 'required',
+            'awareness' => 'required',
+            'brawl' => 'required',
+            'empathy' => 'required',
+            'expression' => 'required',
+            'intimidation' => 'required',
+            'leadership' => 'required',
+            'streetwise' => 'required',
+            'subterfuge' => 'required',
+            'animalKen' => 'required',
+            'crafts' => 'required',
+            'drive' => 'required',
+            'etiquette' => 'required',
+            'firearms' => 'required',
+            'larceny' => 'required',
+            'melee' => 'required',
+            'performance' => 'required',
+            'stealth' => 'required',
+            'survival' => 'required',
+            'academis' => 'required',
+            'computer' => 'required',
+            'finance' => 'required',
+            'investigation' => 'required',
+            'law' => 'required',
+            'medecine' => 'required',
+            'occult' => 'required',
+            'politics' => 'required',
+            'science' => 'required',
+            'technology' => 'required'
+            ]);
+        Session::put($request->('_token'));
+        return redirect('/historical');
+    }
+    public function getHistorical (Request $request) {
+        return view('page::historique');
+    }
+    public function postHistorical (Request $request) {
+        $validator = Validator::make(
+            $request->all(),[
+            'allies' => 'required',
+            'contacts' => 'required',
+            'generation' => 'required',
+            'influence' => 'required',
+            'mentor' => 'required',
+            'renown' => 'required',
+            'servants' => 'required',
+            'satuts' => 'required',
+            'herd' => 'required'
+            ]);
+        Session::put($request->('_token'));
+        return redirect('/');
     }
 }
