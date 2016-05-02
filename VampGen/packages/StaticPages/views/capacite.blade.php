@@ -110,6 +110,7 @@
 							<input name="alertness" type="radio" id="alertness" value="5"/>
 						</div>
 					</div>
+					<p>vous avez X points à répartire</p>
 				</div>
 				<div class="radio-list-title">
 					<h1 class="header">Compétences</h1>
@@ -213,6 +214,7 @@
 							<input name="survival" type="radio" id="survival" value="5"/>
 						</div>
 					</div>
+					<p>vous avez X points à répartire</p>
 				</div>
 				<div class="radio-list-title">
 					<h1 class="header">Connaissances</h1>
@@ -316,6 +318,7 @@
 							<input name="science" type="radio" id="science" value="5"/>
 						</div>
 					</div>
+					<p>vous avez X points à répartire</p>
 				</div>
 			</div>
 			<div class="center-aligned">

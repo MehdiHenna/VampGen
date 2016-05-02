@@ -1,8 +1,5 @@
-$(document).ready(function (){
-	console.log('hello !');
-	$('.talent').on('change', function(){
-		console.log('Sir yes Sir !');
-		var value = $(this).val();
-		alert(value);
-	});
-});
+const $ = require('jquery');
+require('./modules/character.js');
+require('./modules/clan.js');
+
+
