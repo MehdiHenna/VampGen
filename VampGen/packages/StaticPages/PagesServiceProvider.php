@@ -16,7 +16,7 @@ class PagesServiceProvider extends ServiceProvider
 		if(! $this->app->routesAreCached()){
 			require __DIR__.'/routes.php';
 		}
-		$this->loadViewsFrom(__DIR__.'/../StaticPages/views', 'pages');
+		$this->loadViewsFrom(__DIR__.'/views', 'pages');
 
 		$this->publishes([
 			__DIR__.'/config/pages.php' => config_path('pages.php')
